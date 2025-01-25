@@ -22,8 +22,8 @@ header {
 .nav{
     
     background-color: white;
-    height: 20vh;
-    width: 100vw;
+    height: 20dvh;
+    width: 100dvw;
     display: flex   ;
     justify-content: space-around;
 }
