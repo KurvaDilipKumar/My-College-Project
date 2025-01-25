@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Research - NMREC College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(45deg, #007bff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            position: sticky;
+            top: 0;
+            font-style: italic;
+            z-index: 69;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            animation: slideIn 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+            animation: slideIn 1.2s ease-out;
+        }
+
+        /* Header Animations */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-family: 'Quicksand', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .nav-bar a:hover {
+            background-color: #00c6ff;
+            border-radius: 5px;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Research Areas Section */
+        .research-areas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 40px 20px;
+        }
+
+        .research-card {
+            background-color: #fff;
+            width: 30%;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .research-card h3 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .research-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .research-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Publications Section */
+        .publications {
+            background-color: #f1f1f1;
+            padding: 60px 20px;
+        }
+
+        .publications h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 50px;
+        }
+
+        .publication-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .publication-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .publication-card h3 {
+            font-size: 1.6rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .publication-card p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .publication-card a {
+            color: #007bff;
+            font-weight: 500;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Collaborations Section */
+        .collaborations {
+            padding: 60px 20px;
+        }
+
+        .collaboration-card {
+            background-color: #fff;
+            padding: 30px;
+            width: 250px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .collaboration-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .collaboration-card h3 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .collaboration-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .collaboration-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1.1rem;
+        }
+
+        .footer a {
+            color: #00c6ff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>NMREC College Research</h1>
+        <p>Innovating Tomorrow, Today</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="#research-areas">Research Areas</a>
+        <a href="#publications">Publications</a>
+        <a href="#collaborations">Collaborations</a>
+    </div>
+
+    <!-- Research Areas Section -->
+    <section id="research-areas">
+        <h2 class="section-title" style="text-align: center; margin: 20px 3px;
+        font-size: 2em;">Our Research Areas</h2>
+        <div class="research-areas">
+            <!-- Research Card 1 -->
+            <div class="research-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Exploring advanced machine learning models and AI applications in various fields.</p>
+            </div>
+
+            <!-- Research Card 2 -->
+            <div class="research-card">
+                <h3>Data Science</h3>
+                <p>Innovating with big data to uncover insights and drive decision-making in businesses.</p>
+            </div>
+
+            <!-- Research Card 3 -->
+            <div class="research-card">
+                <h3>Cybersecurity</h3>
+                <p>Protecting digital assets with cutting-edge encryption and network security technologies.</p>
+            </div>
+
+            <!-- Research Card 4 -->
+            <div class="research-card">
+                <h3>Renewable Energy</h3>
+                <p>Developing sustainable energy solutions to reduce carbon footprints and protect the environment.</p>
+            </div>
+
+            <!-- Research Card 5 -->
+            <div class="research-card">
+                <h3>IoT & Smart Systems</h3>
+                <p>Building interconnected systems that optimize operations across industries using IoT.</p>
+            </div>
+
+            <!-- Research Card 6 -->
+            <div class="research-card">
+                <h3>Blockchain Technology</h3>
+                <p>Revolutionizing secure transactions and data storage through decentralized solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <h2>Our Publications</h2>
+        <div class="publication-list">
+            <div class="publication-card">
+                <h3>Blockchain in Healthcare</h3>
+                <p>Exploring the potential of blockchain for securing healthcare data and patient privacy.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="publication-card">
+                <h3>AI for Smart Cities</h3>
+                <p>Integrating AI for optimized resource management and smart city development.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="publication-card">
+                <h3>Cybersecurity in Cloud Computing</h3>
+                <p>Strategies to safeguard cloud infrastructure against rising cyber threats.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="publication-card">
+                <h3>Renewable Energy Tech</h3>
+                <p>Next-gen technologies for efficient and eco-friendly renewable energy solutions.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborations Section -->
+    <section id="collaborations" class="collaborations">
+        <h2>Our Research Collaborations</h2>
+        <div class="collaboration-card">
+            <img src="https://via.placeholder.com/250" alt="Collaboration 1">
+            <h3>TechCorp</h3>
+            <p>Leading the way in AI research and development.</p>
+        </div>
+        <div class="collaboration-card">
+            <img src="https://via.placeholder.com/250" alt="Collaboration 2">
+            <h3>Data Solutions</h3>
+            <p>Partnering for innovative data science applications in healthcare.</p>
+        </div>
+        <div class="collaboration-card">
+            <img src="https://via.placeholder.com/250" alt="Collaboration 3">
+            <h3>EcoEnergy</h3>
+            <p>Joint research in renewable energy for a sustainable future.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2025 NMREC College Research. All Rights Reserved. <a href="mailto:research@nmrec.edu">Contact Us</a></p>
+    </div>
+
+</body>
+</html>

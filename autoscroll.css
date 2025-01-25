@@ -1,0 +1,75 @@
+
+.accrediation {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.accrediation  h1{
+    color: rgb(95, 76, 236);
+    font-size: 2.69em;
+}
+
+.partnerships{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.partnerships h1{
+    color: rgb(95, 76, 236);
+    font-size: 2.69em;
+}
+
+
+@keyframes slide{
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logo{
+    overflow: hidden;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.logo::before,
+.logo::after{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logo::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logo::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),white);
+}
+
+.logo:hover .logo-slide{
+    animation-play-state: paused;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 69s slide infinite linear;
+}
+
+.logo-slide img{
+    height: 50px;
+    margin: 0 40px;
+}

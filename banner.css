@@ -1,0 +1,14 @@
+
+
+.collegeVideo video {
+    margin: 10px;
+    height: 65dvh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.collegeVideo video::-webkit-media-controls {
+    display: none;
+}
+

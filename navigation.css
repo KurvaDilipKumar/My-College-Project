@@ -1,0 +1,150 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+  }
+
+
+.nav{
+    
+    background-color: white;
+    height: 20vh;
+    width: 100vw;
+    display: flex   ;
+    justify-content: space-around;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------nav left side  */
+.navLeft{
+    width: 8%;
+}
+
+.navLeft img{
+    padding: 10px;
+    width: 80%;
+    height: 85%;
+}
+
+
+/* ------------------------------------------------------------------------------nav right side  */
+
+.navRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;  
+    width: 90%;
+}
+
+
+/* ------------------------------------------------------------------------------nav right top side  */
+
+.navRightTop{
+    height: 35%;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navRightTop h1{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 2.269em;
+    font-family: "Poppins";
+    /* font-family: "Cinzel Decorative"; */
+    font-style: italic;
+    /* color: #C02633; */
+    /* color: rgb(189, 7, 7); */
+    color: rgb(238, 123, 7);
+}
+
+
+
+/* ------------------------------------------------------------------------------nav right Bottom side  */
+
+.navRightBottom{
+    height: 35%;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navRightBottom ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navRightBottom ul li{
+    list-style: none;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 30px;
+}
+
+.navRightBottom ul li button{
+    background: none; 
+    padding: 0; 
+    border: none; 
+    cursor: pointer;
+
+}
+
+
+.navRightBottom ul li a{
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Poppins";
+    font-weight: bolder;
+    color: rgb(10, 10, 195);
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-size: 1em;
+}
+
+.navRightBottom ul li a:hover{
+    color: white;
+    background-color: rgb(10, 10, 195);
+}
+
+
+/* ------------------------------------------------------------------------------nav right bottom side  */
+
+.newsMarquee{
+    height: 40px;
+    margin: auto;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(19, 136, 8);
+    font-style: italic;
+    color: white;
+    font-family: "poppins";
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+

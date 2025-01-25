@@ -1,0 +1,61 @@
+
+.glance{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.glance h1{
+    color: rgb(95, 76, 236);
+    font-size: 2.69em;
+}
+
+
+
+.glance-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 300px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+.glance-card-item {
+    box-shadow: 0 0 24px var(--boxShadowColor);
+
+    border-radius: 28px;
+    transition: box-shadow 0.369s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glance-card-item:hover {
+    box-shadow: 0 5px 15px var(--boxShadowColorHower);
+}
+
+.glance-card-item h3 {
+    font-size: 2em;
+}
+
+.glance-card-item p {
+    font-size: 1.2em;
+}
+
+.red {
+    color: rgb(187, 34, 34);
+}
+
+.blue {
+    color: rgb(44, 44, 190);
+}
+
+.green {
+    color: green;
+}
+

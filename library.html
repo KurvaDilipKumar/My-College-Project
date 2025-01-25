@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library - NMREC College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #105396;
+            color: #fff;
+            padding: 20px 20px;
+            text-align: center;
+            font-style: italic;
+            position: sticky;
+            top: 0;
+            z-index: 69;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-family: 'Italianno', cursive;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: #007bff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            color: white;
+            margin: 0 25px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .nav-bar a:hover {
+            color: #f8f9fa;
+            transition: color 0.3s ease;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #007bff;
+        }
+
+        /* Library Facilities Section */
+        .library-facilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .facility-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            padding: 20px;
+            position: relative;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .facility-card h3 {
+            font-size: 1.8rem;
+            margin-top: 15px;
+            color: #007bff;
+        }
+
+        .facility-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1.1rem;
+        }
+
+        .footer a {
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>NMREC College Library</h1>
+        <p>Your Gateway to Knowledge and Resources</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="#facilities">Library Facilities</a>
+        <a href="#resources">Digital Resources</a>
+        <a href="#events">Library Events</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <!-- Library Facilities Section -->
+    <section id="facilities">
+        <h2 class="section-title">Library Facilities</h2>
+
+        <div class="library-facilities">
+            <!-- Facility Card 1 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Study Area">
+                <h3>Study Area</h3>
+                <p>Our spacious and comfortable study areas offer a peaceful environment for focused learning and group study sessions.</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Facility Card 2 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Study Area">>
+                <h3>Computer Labs</h3>
+                <p>The library is equipped with multiple computer labs for digital learning, research, and access to online journals and databases.</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Facility Card 3 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Study Area">
+                <h3>Research Support</h3>
+                <p>Our library staff provides assistance with academic research, from finding books and journals to citing sources properly.</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Facility Card 4 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Study Area">
+                <h3>Reading Room</h3>
+                <p>The reading room offers a serene environment for deep reading, study, and quiet reflection with a variety of academic materials.</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Resources Section -->
+    <section id="resources">
+        <h2 class="section-title">Digital Resources</h2>
+
+        <p style="text-align: center; font-size: 1.2rem;">Our library provides a wide range of online resources, including e-books, academic journals, research databases, and multimedia content for students and faculty.</p>
+
+        <div class="library-facilities">
+            <!-- Digital Resource Card 1 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="E-books">
+                <h3>adfasdf</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quibusdam distinctio quas.</p>
+                <a href="#learn-more" class="cta-button">Explore Now</a>
+            </div>
+
+            <!-- Digital Resource Card 2 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Research Databases">
+                <h3>asdfasdf</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestias obcaecati beatae fuga nisi.</p>
+                <a href="#learn-more" class="cta-button">Explore Now</a>
+            </div>
+            <!-- Digital Resource Card 1 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="E-books">
+                <h3>adfasdf</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quibusdam distinctio quas.</p>
+                <a href="#learn-more" class="cta-button">Explore Now</a>
+            </div>
+
+            <!-- Digital Resource Card 2 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Research Databases">
+                <h3>asdfasdf</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestias obcaecati beatae fuga nisi.</p>
+                <a href="#learn-more" class="cta-button">Explore Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Events Section -->
+    <section id="events">
+        <h2 class="section-title">Upcoming Library Events</h2>
+
+        <div class="library-facilities">
+            <!-- Event Card 1 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Book Fair">
+                <h3>adfadf</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est corporis porro inventore aut quia.</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Workshop on Research">
+                <h3>asdfasdfa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex dolorem voluptatem in culpa reiciendis non necessitatibus?</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+            <!-- Event Card 1 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Book Fair">
+                <h3>adfadf</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est corporis porro inventore aut quia.</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="facility-card">
+                <img src="STUDENT.jpeg" alt="Workshop on Research">
+                <h3>asdfasdfa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex dolorem voluptatem in culpa reiciendis non necessitatibus?</p>
+                <a href="#learn-more" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer" id="contact">
+        <p>© 2025 NMREC College Library. All Rights Reserved. <a href="mailto:library@nmrec.edu">Contact Us</a></p>
+        </div>
+    
+    </body>
+    </html>

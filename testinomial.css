@@ -1,0 +1,32 @@
+
+.testinomial {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.testinomial h1{ 
+    color: rgb(95, 76, 236);
+    font-size: 2.69em;
+}
+
+.testinomials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testinomialItem {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(168, 221, 206);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(10, 88, 66);
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+
+:root{
+    --boxShadowColor: rgba(0, 0, 0, 0.1018296843);    
+    --boxShadowColorHower: rgba(0, 0, 0, 0.296925874);
+}
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    font-family: "Cinzel Decorative";
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-style: italic;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2.69em;
+    margin-bottom: 10px;
+    color: #0078d4;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+
+.btechcard {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 400px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+
+
+.mtechcard {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 400px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+.minorscard {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 400px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+.card-item {
+    box-shadow: 0 0 24px var(--boxShadowColor);
+
+    border-radius: 28px;
+    transition: box-shadow 0.369s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-item:hover {
+    box-shadow: 0 5px 15px var(--boxShadowColorHower);
+    cursor: pointer;
+}
+
+.card-item h3 {
+    font-size: 50px;
+    line-height: 1px;
+}
+
+.card-item p {
+    font-size: 20px;
+    margin: 1px 30px;
+}
+
+
+.mbacard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    max-width: 1200px;
+    border-radius: 50px;
+    box-shadow: 0 0 24px var(--boxShadowColor);
+    border-radius: 28px;
+    transition: box-shadow 0.369s ease-in-out;
+    font-size: 2em;
+}
+
+.mbacard:hover{
+    box-shadow: 0 5px 15px var(--boxShadowColorHower);
+    cursor: pointer;
+}
+
+
+
+.links-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links-section a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #0078d4;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.links-section a:hover {
+    background-color: #005fa3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+} */
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: "cinzel decorative";
+    font-style: italic;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.nav-bar {
+    background-color: #343a40;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.nav-bar a:hover {
+    color: #007bff;
+}
+
+.course-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.course-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.course-card .content {
+    padding: 20px;
+}
+
+.course-card h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.details-section {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.details-section h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.details-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .course-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .course-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
