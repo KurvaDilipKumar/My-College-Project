@@ -64,6 +64,26 @@
 
     <main>
 
+         <div id="chatbot-button" class="chatbot-button">
+            <img id="chatbot-icon" src="chatbot.jpg" alt="Chatbot Icon">
+          </div>
+        
+          <!-- Chatbot iframe -->
+          <div id="chatbot-container" class="chatbot-container">
+            <iframe
+              src="https://www.chatbase.co/chatbot-iframe/5CT-eoeHJHPfVGHkYyEQi"
+              width="100%"
+              height="100%"
+              style="border-radius: 10px; border: none;"
+            ></iframe>
+          </div>
+
+         <a href="#top" class="back-to-top">↑</a>
+        
+         <div id="temp">
+            <p>Copyright &copy; 2025 NMREC. All rights reserved.</p>
+        </div>
+
         <div class="newsMarquee">
             <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit praesentium,
                 accusantium cupiditate veritatis autem veniam numquam assumenda quibusdam, molestiae consequatur,
@@ -291,11 +311,6 @@
             <p>&copy; 2024 Nalla Malla Reddy Engineering College. All Rights Reserved.</p>
         </div>
     </footer>
-
-
-     <script>
-        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "5CT-eoeHJHPfVGHkYyEQi"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
-    </script>
 
 
 </body>
